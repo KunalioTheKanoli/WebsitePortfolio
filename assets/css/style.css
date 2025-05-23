@@ -17,7 +17,7 @@ body{margin:0;background:var(--bg-dark);color:var(--text-light);font-family:var(
 .skip-link:focus{left:.5rem;}
 .caption{font-size: 0.875rem;color: var(--accent-faded);text-align: center;margin-top: 0.5rem;}
 .container{width:min(90%,72rem);margin-inline:auto;}
-.divider{border: 0; border-top: 1px solid var(--accent-faded);border-left: 0;width: 100%;margin: 3rem 0;grid-column: 1 / -1;}
+.divider{border:0;border-top:1px solid var(--accent-faded);width:100%;margin:3rem 0;grid-column:1 / -1;}
 .flex.between{display:flex;justify-content:space-between;align-items:center;}
 .site-header{background:var(--surface);box-shadow:0 2px 6px #000a;position:sticky;top:0;z-index:999;}
 .logo{font-family:var(--font-display);font-weight:600;font-size:1.5rem;color:var(--accent);text-decoration:none;}
@@ -38,10 +38,15 @@ body{margin:0;background:var(--bg-dark);color:var(--text-light);font-family:var(
 .btn.small:hover{background:#222;}
 .sprints-grid{display:grid;gap:2rem;margin-block:4rem;}
 @media(min-width:40rem){.sprints-grid{grid-template-columns:repeat(2,1fr);}}
-.sprint-card{background:var(--surface);border-radius:var(--radius);overflow:hidden;box-shadow:0 4px 12px #000a;transform:translateY(40px);opacity:0;transition:var(--transition);}
+.sprint-card{display:grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; align-items:center;}
 .sprint-card figure{margin:0;}
 .sprint-card img{width:100%;display:block;}
-.sprint-content{padding:1.25rem 1.5rem 2rem;}
+.sprint-content{font-size: 0.95rem;}
 .sprint-content h2{margin-top:0;font-size:1.15rem;}
+.sprint-img{margin:0;}
+.sprint-img img{width:100%;border-radius: var(--radius);box-shadow:0 4px 12px #000a;}
+.sprint-title{grid-column: 1 / -1; margin: 0 0 1rem; font-size: 1.3rem;}
+@media (max-width: 40rem){.sprint-card{grid-template-columns: 1fr;}
+  .sprint-img,.sprint-content{grid-column: 1;}}
 .content-reveal.visible{transform:translateY(0);opacity:1;}
 .site-footer{margin-top:6rem;padding:2rem;text-align:center;font-size:.875rem;background:#00000050;backdrop-filter:blur(4px);}
