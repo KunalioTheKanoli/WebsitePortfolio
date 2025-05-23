@@ -5,8 +5,8 @@
   --text-light:#edf1f2;
   --accent:#00ff85;
   --accent-faded:#00ff8590;
-  --font-sans:"Inter",system-ui,sans-serif;
-  --font-display:"Space Grotesk",sans-serif;
+  --font-sans:"Space Grotesk",system-ui,sans-serif;
+  --font-display:"Orbitron",sans-serif;
   --radius:.65rem;
   --transition:250ms ease;
 }
