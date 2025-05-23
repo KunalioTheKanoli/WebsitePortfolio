@@ -4,12 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>About Me — Kunal Pal</title>
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&family=Orbitron:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Site styles -->
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to Content</a>
+
   <header class="site-header">
     <div class="container flex between">
       <a class="logo" href="index.html">Kunal Pal</a>
@@ -22,16 +27,31 @@
       </nav>
     </div>
   </header>
+
   <main id="main" class="container">
-    <h1>About Me</h1>
+    <h1 class="page-title">About Me</h1>
+
+    <!-- hero image -->
+    <figure class="about-hero content-reveal">
+      <!-- Replace the src with your own large photo -->
+      <img src="assets/img/about_hero.jpg" alt="Portrait of Kunal Pal smiling" loading="eager">
+    </figure>
+
     <article class="bio content-reveal">
-      <p>I’m a senior HCI student at <em>Your University</em> who treats every design brief like a quest log. My toolkit spans Figma, React, Unity, and eye‑tracking research. I believe great interfaces should be as intuitive as a favourite game controller: <strong>low‑friction, deeply engaging, and inclusive for all players.</strong></p>
-      <p>Beyond pixels, you’ll find me speed‑running indie titles, moderating local game‑jam meet‑ups, and mentoring first‑year designers on accessibility best practices.</p>
+      <p>I grew up in the suburbs of Boston, where evenings were split between trying to become the ultimate Pokémon trainer on my Nintendo 3DS and writing tiny calculator programs on the family PC. That early fascination with games, technology, and problem-solving led me to Williams College, where I am now pursuing a B.A. in Mathematics & Computer Science with the long-term goal of entering video-game development.</p>
+
+      <p>At Williams I have explored the breadth of computer science—from designing accessible interfaces in Human-Computer Interaction, to leveraging large-language models in Machine Learning, to analyzing algorithmic complexity in Theory of Computation. I also conducted research through the Williams SMALL REU, developing efficient algorithms for generating spanning trees and multiset permutations—experience that sharpened both my theoretical insight and my collaborative skills.</p>
+
+      <p>Beyond code, I unwind with Indian serials, horror films, and endless re-reads of the <em>Harry Potter</em> series. Dance is another passion: you can catch clips of my performances with Williams’ Asian Dance Troupe online. Whether tackling new challenges, mentoring peers as a residential advisor, or collaborating across diverse student groups, I’m fueled by curiosity and a drive to keep learning.</p>
+
+      <p>I’m always happy to connect—feel free to reach out at <strong>kp12@williams.edu</strong>.</p>
     </article>
   </main>
+
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Kunal Pal.</p>
   </footer>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
